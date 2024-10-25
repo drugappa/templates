@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost</title>
+   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        :root{
+            --bg-color:#160d07;
+            --text-color:#fffdee;
+            --main-color:#ffa86a:
+            --other-color:#d6d4c8;
+            --second-color:#ffffff4f;
+
+            --h1-font:7.5rem;
+            --p-font:1.1rem;
+        }
+        header{
+            background-color: #ffffff00;
+            margin: 0%;
+            padding:5px 8%;
+            width: 100%;
+            z-index: 1000;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navlink{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin:0 32px;
+            gap: 20px;
+        }
+        .navlink a{
+            text-decoration: none;
+            color: aliceblue;
+
+        }
+        .navlink a:hover{
+            color: rgb(3, 2, 2);
+            padding: 15px;
+            font-weight: 800;
+            border-radius: 30px;
+            background-color: rgba(236, 105, 11, 0.912);
+            text-decoration: underline;
+
+        }
+        body{
+            background-color: rgb(57, 44, 44);
+        }
+        .nav-side{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap:20px; 
+        }
+        .nav-side a{text-decoration: none;
+            color: rgb(239, 241, 243);
+            font-weight: 600;
+        }
+        .nav-side a:hover{
+            padding: 10px;
+            background-color:rgba(236, 105, 11, 0.912);
+            text-decoration: underline;
+            border-radius: 30px;
+            color: #0b0a0a;
+            font-weight: 800;
+        }
+        #menu-icon{
+            font-size: 42px;
+            z-index: 10001;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+        
+
+       
+        section{
+            color: darkgray;
+            padding: 0 17%;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(250.55deg, #120b07 0%, #311b0d 28.55%, #160d07);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 1rem;
+
+        }
+        .section-img{
+            width: 100%;
+            height: auto;
+        }
+        .section-text h1{
+            font-size: 5.2rem;
+            font-weight: 600;
+            margin:  0;
+            color: aliceblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight:900;
+        }
+        .section-text h4{
+            font-size: 1.2rem;
+            font-weight: 300;
+            padding: 0%;
+            margin: 0;
+            color: orange;
+        }
+        .ghost{
+            color: yellow;
+            font-weight: 800;
+        }
+        .section-text p{
+            font-size: 1.1rem;
+            font: 1em sans-serif;
+            font-weight: 400;
+            line-height: 25px;
+        }
+        .botten-box {
+            position: absolute;
+            bottom: 12%;
+            right: 35%;
+        }
+        .botten-box a{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+            width: 80px;
+            background-color: orange;
+            border-radius: 50%;
+            border: 2px solid black;
+            font-size: 35px;
+            color: aliceblue;
+            transition: all .7s ease;
+        }
+        .botten-box a:hover{
+            background-color: #311b0d0b;
+            color: var(#ffffff00);
+            transform: rotate(10) translate(12);
+            border-color: #fff;
+            }
+            .social{
+                position: absolute;
+                top: 50%;
+                padding: 0 8%;
+                transform: translateY(-50%);
+            }
+            .social img{
+                display: block;
+                columns: #fff;
+                margin: 28px 0;
+                font-size: 22px;
+                transition: all .7s ease;
+            }
+          .social img:hover{
+            transform: scale(1.1) translateY(-5px);
+          }
+
+
+          @media(max-width:1870px){
+            :root{
+                --h1-font:6.5rem;
+                --p-font:1rem;
+            }
+          }
+          @media(max-width:1630px){
+            header{
+                padding: 22px 4%;
+            }
+            .social{
+                padding: 0 4%;
+            }
+            .section{
+                padding: 0 13%;
+            }
+          }
+          @media(max-width:1460px){
+            :root{
+                --h1-font:5.5rem;}
+                header{
+                    padding: 22px 2%;}
+                    .social{
+                        padding: 0 0%;
+                    }
+                    .section-text{
+                        padding:  30% 0;
+                        padding-bottom: 0%;
+                    }
+                    .navlogo img{
+                        width: 60px ;
+                        height: 60px;
+                        font-size: 25px;
+                    }
+          }
+          @media(max-width:1150px){
+            .social{
+                display: none;
+            }
+            .section-text{
+                        padding:  30% 0;
+                        padding-bottom: 0%;
+                    }
+            .navlogo{
+                bottom: 5%;
+                right: 10%;
+            }
+          }
+          @media(max-width:950px){
+            #menu-icon{
+                display: block;
+            }
+            .navlink{
+                position: absolute;
+                top: 100%;
+                right: 100%;
+                width: 200px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                padding: 10px 20px;
+                background-color:var(--bg-color);
+                transition: all .7s ease;
+            }
+            .navlink a{
+                display: block;
+                padding: 0;
+                margin: 15px 5px;
+                font-size: 1.4rem;
+                font-weight: 400;
+
+            }
+            .navlink.open{
+                right: 0;
+            }
+            :root{
+                --h1-font:5rem;
+            }
+          }
+          @media(max-width:880px){
+            .botten-box{
+                display: none;
+            }
+            section{
+                padding: 20px;
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                height: auto;
+            }
+            section-img{
+                margin: 0 auto;
+                text-align: center;
+            }
+            section-img img{
+                max-width: 480px;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            section-text{
+                margin: 15px 0;
+            }
+            section-text h4{
+                font-size: 24px;
+            }
+          }
+          @media(max-width:550px){
+            section-img img{
+                max-width: 400px;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+          }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href=""><img src="https://img.icons8.com/?size=100&id=5tnJMLyxOEgq&format=png&color=000000" alt="loding" width="50px"></a>
+
+        <ul type="none" class="navlink">
+            <li><a href="">Home</a></li>
+            <li><a href="">About </a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Exhibitio</a></li>
+        </ul>
+        <div class="nav-side">
+            <a href="" class="n-btn">Say Hello</a>
+            <div class="bx-menu" id="menu-icon">
+                <div id="menu-icon">
+                    <img src="https://img.icons8.com/?size=100&id=QBUqA8J0H3YJ&format=png&color=000000" alt="loding" width="30px">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <div  data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0" class="section-text">
+            <h4> Headquarters Special Troops</h4>
+            <h1>Ghost  <samp class="ghost"> Army </samp> </h1>
+            <p>The Ghost Army was created by U.S. Army planners Ralph Ingersoll and Billy Harris, and led by Colonel Harry L. Reeder. Inspiration for the unit came from the British units who had honed the deception technique for Operation Bertram during the battle of El Alamein in late 1942</p>
+        </div>
+        <img data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" class="section-img" src="https://png.pngtree.com/png-vector/20240825/ourmid/pngtree-3d-halloween-pumpkin-glow-with-white-ghost-on-transparent-background-png-image_13620334.png" alt="loding" width="300px">
+    </section>
+    <div class="botten-box">
+        <a href="#"><img src="https://img.icons8.com/?size=100&id=87429&format=png&color=000000" alt="loding" width="30px"></a>
+    </div>
+
+    <div class="social">
+        <a href="#"><img src="https://img.icons8.com/?size=100&id=CpwOwPqBJ5E5&format=png&color=000000" alt="loding" width="40px"></a>
+        <a href="#"><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="loding" width="40px"></a>
+        <a href="#"><img src="https://img.icons8.com/?size=100&id=2pPtAXbhG5D2&format=png&color=000000" alt="loding" width="40px"></a>
+    </div>
+    <script data-aos="zoom-out-up" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+
+ let menu = document.querySelector('#menu-icon')
+    let navlist = document.querySelector('.navlink.open')
+
+
+        AOS.init();
+      </script>
+</body>
+</html>

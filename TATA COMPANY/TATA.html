@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATA Company</title>
+    <style>
+        *::selection{
+            background-color: black;
+            color: aliceblue;
+        }
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        header{
+            top: 0%;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(105, 12, 12, 0.452);
+            padding: 10px 9%;
+            color: aliceblue;
+            /* align-items: center; */
+        }
+        #navlink{
+            display: flex;
+            text-decoration-style: none;
+            gap: 30px;
+            justify-content: space-between;
+            /* align-items: center; */
+            padding: 10px 9%;
+        }
+        details{
+            padding: 20px;
+            color: aliceblue;
+            width: 100%;
+            margin: auto;
+           
+          
+        }
+        .nav-menu{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            text-align-last: 2;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        main{
+            width: 70%;
+            align-items: center;
+            margin: auto;
+        }
+
+        aside{
+            padding: 20px;
+            /* min-height: 100vh; */
+            background-size: cover;
+            background-image: url("https://www.tata.com/content/dam/tata/images/newsroom/business/desktop/rnt3_banner_desktop_1920x1080.jpg");
+        }
+        .aside-text{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           padding: 180px;
+        }
+
+        .aside-text ul{
+            font-size: 1.5rem;
+            color: rgb(169, 239, 30);
+        }
+        .aside-text p{
+            color: yellow;
+            font-size: 1.8rem;
+        }
+        .aside-text h1{
+            color: rgb(255, 253, 250);
+            font-size: 5.5rem;
+        }
+        .article-one{
+            flex: 3;
+            background-image: url(https://tse4.mm.bing.net/th?id=OIP.z9vQwb9fX6aB6KX3E-rd9gHaE0&pid=Api&P=0&h=180);
+            background-size: cover;
+            border-radius: 30px;
+            margin: 20px 0px;
+            min-height: 30vh;
+            width: 70%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+        }
+        .article-one:hover{
+            margin-left: 30px;
+        }
+        
+        .article-one h1{
+            font-size: 2.5rem;
+           
+        }
+        article{
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+        .article-two{
+            flex: 1;
+            width: 30%;
+            padding: 20px;
+            margin: 20px;
+            background-color: rgba(58, 6, 74, 0.637);
+            border-radius: 30px;
+            transition: 1s;
+        }
+        .article-two:hover{
+            margin-right: 30px;
+        }
+
+        .article-two h1{
+            font-size: 2.5rem;
+        }
+        .section-content{
+            min-height: 30vh;
+            width: 70%;
+            background-size: cover;
+            background-image: url(https://www.tatahitachi.co.in/work-with-us-new-hero-img.png);
+            border-radius: 30px;
+        }
+        section{
+            gap: 20px;
+            display: flex;
+            /* justify-content: center; */
+        }
+        .section-text{
+            padding: 25px;
+            max-resolution: 20px;
+
+        }
+        .section-text h3{
+            
+            font-size: 2.0rem;padding: 20px;
+            color: rgb(24, 24, 6);
+        }
+        .section-text p{
+            color: rgb(61, 20, 20);
+            font-size: 1.3rem;
+            padding:0 20px ;
+        }
+        .at{
+            color: rgb(239, 8, 8);
+        }
+        .tata details{
+            border-radius: 30px;
+            color: black;
+            display: inline;
+            align-items: center;
+            background-color: rgba(165, 42, 42, 0.375);
+            font-size: 1.5rem;
+            /* line-height: 1.3; */
+            /* padding: 10px; */
+            margin: 10px 0;
+        }
+        .tata details p{
+            line-height: 2;
+        }
+        .tata details h1{
+            line-height: .5;
+        }
+        .tata details:hover{
+            background-color: azure;
+            color: brown;
+            box-shadow: 0 0 20px black;
+        }
+        footer{
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://wallpaperaccess.com/full/6578158.png" alt="loding" width="50px" height="50px">
+        <ul type="none" id="navlink">
+            <li>
+                <details>
+                    <summary>Business</summary>
+                    <aside>
+                        <h1>Business Overview</h1>
+                        <hr>
+                        <h2>Learn more</h2>
+                        <br>
+                        <p>Our Brands</p>
+                        <hr>
+                        <h3>Browse select Tata brands</h3>
+                        <h1>Business Verticals</h1>
+                        <hr>
+                        <div class="nav-menu">
+                            <ul type="none">
+                                <li>Technology</li>
+                                <li>Steel</li>
+                                <li> Automotive</li>
+                                <li>Consumer & Retail</li>
+                            </ul>
+                            <ul type="none">
+                                <li>Infrastructure</li>
+                                <li>Financial Services </li>
+                                <li>Aerospace & Defence</li>
+                                <li>Tourism & Travel</li>
+                            </ul>
+                            <ul type="none">
+                                <li>Telecom & Media</li>
+                                <li>Trading & Investments</li>
+                                <li>  Community</li>
+                                <li>About US</li>
+                            </ul>
+                        </div>
+
+                    </aside>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>Community</summary>
+                    <aside>
+                        <h1>Overview</h1><hr>
+                        <h3>Areas of Work</h3>
+                        <br>
+                        <div class="nav-menu">
+                            <ul type="none">
+                                <li>Health</li>
+                                <li>Education</li>
+                            </ul>
+
+                            <ul type="none">
+                                <li>Empowerment</li>
+                                <li>Environment</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </details>
+            </li>
+
+            <li>
+                <details type="none">
+                    <summary>About Us</summary>
+                    <aside>
+                        <h1>The Tata group</h1><hr>
+                        <h3>About the Tata Group</h3>
+                        <br>
+                        <div class="nav-menu">
+                            <ul types="none">
+                                <li>Tata Sons</li>
+                                <li>Values and Purpose</li>
+                                <li>Tata Code of Conduct</li>
+                            </ul>
+
+                            <ul type="none">
+                                <li>Heritage</li>
+                                <li>Leadership</li>
+                                <li>Sponsorships</li>
+                            </ul>
+
+                            <ul type="none">
+                                <li>Sustainability</li>
+                                <li>Innovation</li>
+                                <li>Books</li>
+                            </ul>
+                            <hr>
+                        </div>
+                            <h1>Investors</h1>
+                            <br>
+                            <div class="nav-menu">
+                                <p>Investor Section</p>
+                                <p>Companies</p>
+                                <p>Stock Data</p>
+                                <p>Business Verticals</p>
+                            
+                        </div>
+                    </aside>
+                </details>
+            </li>
+
+            <li>
+                 <details>
+                    <summary><a href="">Newsroom</a></summary>
+                 </details>
+            </li>
+
+            <li>
+                <details> 
+                    <summary><a href="">Careers</a></summary>
+                </details>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <aside>
+            <div class="aside-text">
+                <p> Media Statement</p>
+                <h1>Padma <br>Vibhushan <br> Mr Ratan N Tata</h1>
+                <br>
+                <ul type="none">
+                    <li>28.12.1937</li>
+                    <li> 09.10.2024</li>
+                </ul>
+            </div>
+        </aside>
+
+       <article>
+        <div class="article-one">
+            <img src="https://allpngfree.com/png/ratan-tata-png-images-thumbnail-1640681950.png" alt="loding" width="350px">
+            <ul type="none">
+                <p>Media Statement</p>
+                <h1> Padma Vibhushan <br>Mr Ratan N Tata</h1>
+            </ul>
+        </div>
+        <div class="article-two">
+            <h1>Facts</h1>
+            <p>Did you know
+                Tata set up the first cement manufacturing company, India Cement Company, in 1912. It merged into Associated Cement Companies in 1936.</p>
+                <h4>A Timeline</h4>
+        </div>
+       </article>
+
+       <section>
+        <img class="section-img" src="https://qph.cf2.quoracdn.net/main-qimg-ec7113b6368e0a987616becf84132075-lq" alt="loding" width="300px">
+        <div class="section-content">
+            <div class="section-text">
+                
+                <h3>Tata Sustainability</h3>
+                <p>Conclave 2022 <br>
+                    Over 200 Tata leaders and <br> sustainability professionals came <br> together to discuss sustainability imperatives, <br> share cross learnings and envision an <br> enhanced role for the Tata group <br> in building a resilient future.</p>
+            </div>
+          
+        </div>
+       </section>
+
+        <div class="tata">
+            <details>
+                <summary><center><h1>Tata Group</h1></center></summary>
+                <p><samp class="at">Written byJeannette L. Nolen,
+                    Ethan Teekah
+                    Fact-checked byThe Editors of Encyclopaedia Britannica
+                    Updated: Oct. 09, 2024
+                    
+                    Article History</samp></p>
+                    <hr>
+                    <h2>Recent News</h2>
+                    <p>Tata Group is an Indian conglomerate of 30 companies across a wide range of industries, including automobiles, chemicals, consumer products, energy, engineering, financial services, information systems, materials, and telecommunications. Operating in more than 100 countries across six continents, Tata has maintained a leadership position in Indian industry since the early 20th century.</p>
+            </details>
+            <details>
+                <summary>
+                    <center><h1>Legacy and criticisms</h1></center>
+                </summary>
+                <p>It is difficult to overstate the contributions that Tata Group has made to India’s economic modernization. <samp class="at">Jawaharlal Nehru</samp>, India’s first <samp class="at">prime minister</samp>, once referred to Jamsetji Tata as a “one-man planning committee.” More than any other group, Tata has guided and shaped <samp class="at">India’s development</samp>, heralding India’s arrival into the community of industrialized and high-tech nations. This accomplishment is unparalleled not only in India, but in the world. In the words of analyst Andrew Ross, “it is safe to say that no other company anywhere has dominated the history of its national industry as the house of Tata has done.”</p>
+            </details>
+        </div>        
+         
+    </main>
+
+    <footer>
+        <CEnter><p>&copy;TATA COMPANY</p></CEnter>
+    </footer>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

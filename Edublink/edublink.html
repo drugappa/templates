@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBlink</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .email{
+            display: flex;
+            justify-content: space-between;
+           align-items: center;
+            gap: 10px;
+            padding: 0px 100px;
+            background-color: black;
+            color: rgba(178, 180, 183, 0.582);
+        }
+        .email ul{
+            display: flex;
+            
+            align-items: center;
+            gap: 10px;
+        }
+        .email a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .apply{
+            border: none;
+            background-color: rgba(127, 255, 212, 0.544);
+            padding: 10px 20px;
+            color: aliceblue;
+
+        }
+        .email :hover{color: rgba(155, 156, 157, 0.579);}
+
+
+        header{
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: aliceblue;
+        }
+        input{
+            border: none;
+            outline: none;
+            font-size:20px;
+            width:100px;
+            color: black;
+            background-color: rgba(240, 248, 255, 0);
+        }
+        input:hover{
+            border: none;
+            outline: none;
+            font-size:20px;
+            width:100px;
+            color: rgb(32, 198, 220);
+            background-color: rgba(240, 248, 255, 0);
+        }
+      
+        .head{
+            border: 2px solid black;
+            border-radius: 100%;
+            gap: 30px;
+            margin: auto 30px;
+           
+        }
+        .best{
+            color: brown;
+        }
+
+        .head:hover{
+            border: 2px solid black;
+            border-radius: 100%;
+            gap: 30px;
+            background-color: rgba(0, 255, 255, 0.205);
+            margin: auto 30px;
+        }
+
+
+        .jack{
+            min-height: 80vh;
+            background-color: rgba(203, 218, 218, 0.285);
+        }
+
+        .from h1{
+            font-size:4.0rem;
+        }
+        .from p{
+            font-size: 1.5rem;
+            padding:20px 0;
+
+        }
+        .from{
+            padding:150px 100px;
+            padding-bottom: 0%;
+            
+        }
+        .online{
+            display: flex;
+            align-items: end;
+            padding-bottom: 0%;
+            margin-bottom: 0%;
+            padding-top: 50px;
+        }
+        .sunt{
+            display: flex;
+            padding-bottom: 0%;
+            
+            margin-bottom: 0%;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            /* border: 2px solid black; */
+            border-radius: 5px;
+            padding:0px 50px;
+            background-color: rgb(36, 236, 199);
+            color: aliceblue;
+        }
+        .jack{
+            display: flex;
+            /* padding:0 100px; */
+            
+           justify-content:center ;
+            gap: 0px;
+            margin: auto;
+
+        }
+        .Instrunctor{
+            padding: 10px;
+            background-color: aliceblue;
+            height: 80px;
+            border-radius: 30px;
+            margin-top: 350px;
+            transform: translatex(100px);
+        }
+        .Instrunctor ul{
+            display: flex;
+        }
+
+
+        .member{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            min-height: 20vh;gap: 50px;
+            background-color: rgba(68, 190, 135, 0.737);
+        }
+
+        .top{ display: flex;
+            color: aliceblue;
+            align-items: center;
+            justify-content: center;}
+            
+            .top:hover{
+                color: rgb(72, 73, 74);
+                background-color: rgba(240, 248, 255, 0.036);
+            }
+            .logo:hover{
+                filter: brightness(100) invert(100);
+            }
+        .logo{ border: 2px solid rgba(0, 128, 0, 0.2);
+                border-radius: 100%;
+                padding: 2px;
+                ?
+                background-color: rgba(240, 248, 255, 0.262);}
+
+                .dev{
+                    font-size: 2.5rem;
+                    padding-top: 50px;
+                    color: black;
+                }
+                .lop{
+                    font-size: 1.2rem;
+                    color: grey;
+                }
+
+                .manage{display: flex;
+                justify-content: center;
+                align-items: center;}
+
+                .business{
+                    padding: 20px;
+                }
+
+                .red{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(0, 255, 255, 0.148);
+                    display: flex;justify-content: center;align-items: center;
+                }
+                .red img{
+                    filter: brightness(12)invert(#4BAED1D6);
+                }
+                .red:hover{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(0, 255, 255, 0.148);
+                    display: flex;justify-content: center;align-items: center;
+                    
+                    color: #f4f7f8;
+                    background-color: rgba(0, 255, 255, 0.551);
+                    
+                }
+                .green{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(211, 178, 102, 0.148);
+                    display: flex;justify-content: center;align-items: center;
+                }
+                .green:hover{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    color: aliceblue;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(211, 178, 102, 0.559);
+                    display: flex;justify-content: center;align-items: center;
+                }
+
+                .bluw{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(126, 190, 118, 0.148);
+                    display: flex;justify-content: center;align-items: center;
+                }
+                .bluw:hover{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    color: #f4f7f8;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(126, 190, 118, 0.668);
+                    display: flex;justify-content: center;align-items: center;
+                }
+
+                .yallo{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(153, 90, 103, 0.148);
+                    display: flex;justify-content: center;align-items: center;
+                }
+                .yallo:hover{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    color: #f4f7f8;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(153, 90, 103, 0.549);
+                    display: flex;justify-content: center;align-items: center;
+                }
+
+
+                .oreng{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(191, 65, 216, 0.148);
+                    display: flex;justify-content: center;align-items: center;
+                }
+                .oreng:hover{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    color: #f4f7f8;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(191, 65, 216, 0.553);
+                    display: flex;justify-content: center;align-items: center;
+                }
+
+                .lith{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(118, 178, 218, 0.148);
+                    display: flex;justify-content: center;align-items: center;
+                }
+                .lith:hover{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    color: #f4f7f8;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(118, 178, 218, 0.542);
+                    display: flex;justify-content: center;align-items: center;
+                }
+
+                .black{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(151, 122, 225, 0.148);
+                    display: flex;justify-content: center;align-items: center;
+                }
+                .black:hover{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    color: #f4f7f8;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(151, 122, 225, 0.63);
+                    display: flex;justify-content: center;align-items: center;
+                }
+                
+                .whith{width: 300px;padding: 20px;
+                    margin: 10px;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(229, 91, 197, 0.148);
+                    display: flex;justify-content: center;align-items: center;
+                }
+                .whith:hover{width: 300px;padding: 20px;
+                    margin: 10px;
+                    color: #f4f7f8;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(229, 91, 197, 0.553);
+                    display: flex;justify-content: center;align-items: center;
+                }
+
+                .parpal{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(163, 192, 117, 0.148);
+                    display: flex;justify-content: center;align-items: center;
+                }
+                .parpal:hover{width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    color: #f4f7f8;
+                    /* border: 1px solid black; */
+                    border-radius: 10px;
+                    background-color: rgba(163, 192, 117, 0.568);
+                    display: flex;justify-content: center;align-items: center;
+                }
+    </style>
+</head>
+<body>
+    
+        <div class="email">
+            <ul>
+                <p><a href="#">Call:080-8546-5684</a></p><hr>
+                <p><a href="#">janvi145@gmail.com</a></p>
+            </ul>
+            <ul>
+                <p><a href="#">Login/Register</a></p>
+                <button class="apply"><a href="#">Apply Now </a></button>
+            </ul>
+        </div>
+   
+
+        <header>
+           <a href="./edublink.html"> <img src="https://demo.edublink.co/wp-content/uploads/2023/06/logo-dark.png" alt="Login" width="120px"></a>
+            <ul>
+
+
+                <input type="text" placeholder="Home" list="course"  >
+                <datalist id="course">
+                    <option value="EduBlink EducationHOT">EduBlink EducationHOT</option>
+                    <option value="Distant Learning">Distant Learning</option>
+                    <option value="University">University</option>
+                    <option value="Online AcademyHOT">Online AcademyHOT</option>
+                    <option value="Modern Schooling">Modern Schooling</option>
+                    <option value="Kitchen Coach">Kitchen Coach</option>
+                    <option value="Yoga Instructor">Yoga Instructor</option>
+                    <option value="Kindergarten">Kindergarten</option>
+                    <option value="Language Academy">Language Academy</option>
+                </datalist>
+
+
+                <input type="text" placeholder="Pages" list="Pages">
+                     <datalist id="Pages">
+                        <option value="About Us">About Us</option>
+                        <option value=" Instructors"> Instructors</option>
+                        <option value=" Event Pages"> Event Pages</option>
+                        <option value="Shop Pages">Shop Pages</option>
+                        <option value=" FAQ’s"> FAQ’s</option>
+                        <option value="Pricing Table">Pricing Table</option>
+                        <option value=" Coming Soon">  Coming Soon</option>
+                        <option value="  404 Page">   404 Page</option>
+
+                    </datalist>
+
+
+                    <input type="text" placeholder="Courses" list="java">
+                     <datalist id="java">
+                        <option value="Courses Style">Courses Style</option>
+                        <option value="Course Details">Course Details</option>
+                        <option value=" Course Filter"> Course Filter</option>
+                    </datalist>
+
+
+                    <input type="text" placeholder="Blog" list="Blog">
+                     <datalist id="Blog" >
+                        <option value="Blog Style 1">Blog Style 1</option>
+                        <option value="Blog Style 2">Blog Style 2</option>
+                        <option value="Blog Standard">Blog Standard</option>
+                        <option value="Blog Details">Blog Details</option>
+                        
+                    </datalist>
+
+
+                    <input type="text" placeholder="Pages" list="Pages">
+                     <datalist id="Pages">
+                        <option value="Contect ME">Contect ME</option>
+                        <option value="Contect US">Contect US</option>
+                       
+                    </datalist>
+            </ul>
+            <hr>
+
+            <ul>
+                <img class="head" src="https://img.icons8.com/?size=100&id=7695&format=png&color=000000" alt="loding" width="40px">
+
+                <img class="head" src="https://img.icons8.com/?size=100&id=G7PELQpF8j6g&format=png&color=000000" alt="loding" width="40px">
+                  
+            </ul>
+        </header>
+
+        <section class="jack">
+            <div class="from">
+                <h1> Get <samp class="best">2500+</samp> <br>
+                    Best Online Courses <br> From EduBlink</h1>
+                    <p>Excepteur sint occaecat cupidatat non proident sunt in <br> culpa qui officia deserunt mollit.</p>
+                    <button class="sunt"><h2>Find Courses <img src="https://img.icons8.com/?size=100&id=tcefkj4jmLp3&format=png&color=000000" alt="loding" width="30px"></h2></button>
+            </div>
+
+
+            <div class="Instrunctor">
+                <center><h1>Instrunctor</h1></center>
+               <ul>
+                <img src="https://demo.edublink.co/wp-content/uploads/2023/05/author-1-1-1.png" alt="loding" width="200px" height="50px">
+                <div>
+                    <h4 class="best">200+</h4>
+                    <p>Instrunctor</p>
+                </div>
+               </ul>
+            </div>
+
+
+            <div class="Online"> <br><br><br><img src="https://demo.edublink.co/wp-content/uploads/2023/05/girl-1.webp" alt="loding" width="500px"></div>
+        </section>
+
+        <section class="member">
+            <div class="top">
+                <img class="logo" src="https://img.icons8.com/?size=100&id=LcR5Ud07B6CN&format=png&color=000000" alt="loding" width="100px">
+                <h1>3020 <br>
+                    Online Courses</h1>
+            </div>
+            <div class="top">
+                <img class="logo" src="https://img.icons8.com/?size=100&id=ajkz1dk1AfEe&format=png&color=000000" alt="loding" width="100px">
+                <h1>Top <br>
+                    Instructors</h1>
+            </div>
+            <div class="top">
+                <img class="logo" src="https://img.icons8.com/?size=100&id=22127&format=png&color=000000" alt="loding" width="100px">
+                <h1>Online <br>
+                    Certifications</h1>
+            </div>
+            
+            <div class="top">
+                <img class="logo" src="https://img.icons8.com/?size=100&id=sRqPnYg3QRf7&format=png&color=000000" alt="loding" width="100px">
+                <h1>6,000 <br>
+                    Membership</h1>
+            </div>
+        </section>
+
+      <center>
+        <h1 class="dev">Top Categories</h1>
+        <br><br>
+        <p class="lop">  Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore</p>
+      </center>
+
+      <section class="business">
+        <div class="manage">
+            <div class="red">
+                <img src="https://img.icons8.com/?size=100&id=58853&format=png&color=000000" alt="loding" width="50px">
+                <h1>Business Management</h1>
+            </div>
+            <div class="green">
+                <img src="https://img.icons8.com/?size=100&id=6UQ3lCfPTJqz&format=png&color=000000" alt="loding" width="50px">
+                <h1>Arts & Design</h1>
+            </div>
+            <div class="bluw">
+                <img src="https://img.icons8.com/?size=100&id=odtglYWLzRML&format=png&color=000000" alt="loding" width="50px">
+                <h1>Personal Development</h1>
+            </div>
+        </div>
+
+        <div class="manage">
+            <div class="yallo">
+                <img src="https://img.icons8.com/?size=100&id=H6TiXAfwBOBB&format=png&color=000000" alt="loding" width="50px">
+                <h1>Health & Fitness</h1>
+            </div>
+            <div class="oreng">
+                <img src="https://img.icons8.com/?size=100&id=mzUS9JsKCAo6&format=png&color=000000" alt="loding" width="50px">
+                <h1>Data Science</h1>
+            </div>
+            <div class="lith">
+                <img src="https://img.icons8.com/?size=100&id=WCf4kcsJ1PWW&format=png&color=000000" alt="loding" width="50px">
+                <h1>Marketing</h1>
+            </div>
+        </div>
+
+        <div class="manage">
+            <div class="black">
+                <img src="https://img.icons8.com/?size=100&id=15975&format=png&color=000000" alt="loding" width="50px">
+                <h1>Business & Finance</h1>
+            </div>
+            <div class="whith">
+                <img src="https://img.icons8.com/?size=100&id=15898&format=png&color=000000" alt="loding" width="50px">
+                <h1>Computer Science</h1>
+            </div>
+            <div class="parpal">
+                <img src="https://img.icons8.com/?size=100&id=97658&format=png&color=000000" alt="loding" width="50px">
+                <h1>Video & Photography</h1>
+            </div>
+        </div>
+      </section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
