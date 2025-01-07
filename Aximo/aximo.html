@@ -9,12 +9,14 @@
             margin: 0%;
             padding: 0%;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            
+            box-sizing: border-box;
             /* color: rgb(242, 244, 246); */
             
         }
         body{
+            /* overflow: hidden; */
             background-color: antiquewhite;
+            /* overflow-x: hidden   ; */
         }
         header{
             display: flex;
@@ -40,24 +42,30 @@
             border: 2px black solid;
             border-radius: 30px;
         }
-
-
-
-
-
-
-        .manu{background-image: url("https://aximo-react.vercel.app/assets/hero-bg-lh5dmqak.png");
-        background-size: cover;
+        .manu{
+            background-image: url("https://aximo-react.vercel.app/assets/hero-bg-lh5dmqak.png");
+            background-size: cover;
             min-height: 100vh;
-          padding: 30px; margin: 0% 30px;
-          border-radius: 20px;  
-          color: aliceblue;
-          display: flex;
-          align-items: end;
+            padding: 20px;
+             margin: 0% 20px;
+            border-radius: 20px;  
+            color: aliceblue;
+            display: flex;
+            align-items: end;
         }
         .play{
             margin: 50px;
+            animation: rotet 4s linear infinite;
         }
+        @keyframes rotet{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
         .manoj{
             padding: 50px 50px;
             margin: 0px 50px;
@@ -185,13 +193,13 @@
         }
         .technolog{
             padding: 20px;
-            margin: 20px 100px;
+            /* margin: 20px 100px; */
 
             /* display: flex; */
         }
 
         .input{
-            padding:10px 100px;
+            /* padding:10px 100px; */
             margin: 10px ;
             display: flex;
             align-items: center;
@@ -199,12 +207,13 @@
         }
         .out{
             flex: 1;}
-            .out img{
+        .out img{
             /* border: 3px solid black; */
             border-radius: 30px;
         }
         .sarvic{
             flex: 1;
+            transform: translatex(40px);
         }
         .put{
             padding: 20px 70px;
@@ -321,11 +330,13 @@
             font-weight: 800;
         }
         .business{
+            overflow: hidden;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             gap: 20px;
-            margin:20px 100px;
+            margin:20px 10px;
 
         }
         .more{
@@ -342,7 +353,7 @@
             border: none;
             border: 2px solid black;
             border-radius: 30px;
-            margin: 30px 0px;
+            margin: 10px 0px;
         }
         .help{
             flex: 1;
@@ -384,7 +395,7 @@
             border: none;padding: 20px;
             border: 2px  solid rgb(241, 238, 238);
             border-radius: 30px;
-            width: 200px;
+            /* width: 200px; */
             color: aliceblue;
             font-size: 1.5rem;
             background-color: #0a1af6;
